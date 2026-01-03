@@ -2,6 +2,9 @@
 A library consisting of easy to use functions of Intel Intrinsic Datatype, the vectors. The library allows for cleaner code writing, without explicitly using Intel's provided functions for intrinsic vector extensions.
 Please note that the library is usable ONLY for INTEL based processors.
 
+Intrinsic are useful in computations requiring data consisting of thousands of parameters, which help in processing multiple chunks at once, thus reducing the number of computations -> increasing speed.
+Good for medical (Biocomputation), Digital Signal Processing (DSP), etc.
+
 Intrinsic Type: AVX512F & AVX2
 
 The contents are:
