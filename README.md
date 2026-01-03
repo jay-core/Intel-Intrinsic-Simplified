@@ -1,10 +1,14 @@
 # Intel-Intrinsic-Simplified
 A library consisting of easy to use functions of Intel Intrinsic Datatype, the vectors. The library allows for cleaner code writing, without explicitly using Intel's provided functions for intrinsic vector extensions.
+Please note that the library is usable ONLY for INTEL based processors.
+
+Intrinsic Type: AVX512F & AVX2
 
 The contents are:
   1. intrin_generic.h  --  All the datatypes, operator overloads
   2. intrin_print.h  --  The printing method
   3. driver.cpp  --  Example implementation of usage of the library
+  4. Makefile  --  A windows-usable Makefile for necessary flags for compilation
 
 The datatypes available for usage are as follows:
   1.  **int_4_array_a16**  <>  **long_2_array_a16**
