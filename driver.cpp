@@ -20,16 +20,22 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
+
+/*
+Just for an example on how to use the defined datatypes.
+*/
+
 #include "intrin_generic.h"
 #include <iostream>
 using std::cout;
 int main() {
 
-    const float_8_array_a32 vec_a = {123.2, 1233.5, 77.3, 99.23, 555.7, 456.7, 765.3, 4512.12};
-    const float_8_array_a32 vec_b = {123.2, 1233.5, 77.3, 99.23, 555.7, 456.7, 765.3, 4512.12};
+    const float_8_array_a32 vec_a = {123.2, 1233.5, 77.3, 99.23, 555.7, 456.7, 765.3, 4512.12}; // load automatically taken care of
+    const float_8_array_a32 vec_b = {123.2, 1233.5, 77.3, 99.23, 555.7, 456.7, 765.3, 4512.12}; // load automatically taken care of
 
-    float_8_array_a32 result = vec_a * vec_b;
+    float_8_array_a32 result = vec_a * vec_b; // Type-matching multiplication operation: _mm256_mul_ps(vec_A, vec_B)
 
-    std::cout << delim(result, ", ");
+    std::cout << delim(result, ", "); // Printing the vector in one line
     return 0;
+
 }
