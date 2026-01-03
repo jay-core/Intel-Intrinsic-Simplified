@@ -23,6 +23,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 
 //
 /*
+The intrinsic datatypes are property of Intel Corp.
+The following code is just compilation of arithmetic and datatypes
+into a more simplified, easy-to-use types.
+
 The general purpose library for using
 intrinsic functions in an easy-to-use
 format. Uses AVX2, AVX512F instructions as defined
@@ -928,5 +932,6 @@ struct alignas(32) double_8_array_a32 {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
 
 #endif //INTRIN_INTRIN_GENERIC_H
